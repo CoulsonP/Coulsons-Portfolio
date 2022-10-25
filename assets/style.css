@@ -23,6 +23,18 @@ flex-wrap: wrap;
     justify-content: right;
     position: relative;
 }
+/* My picture in the header */
+.mypic img{
+border-radius: 50%;
+}
+
+#aboutme{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 125%;
+    padding: 10px;
+}
+
 .banner h2{
     position:absolute;
     bottom:5px;
