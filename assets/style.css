@@ -75,12 +75,14 @@ section h2{
 .flex img{
     width: 100%;
 }
+/* changes my socials section to fit screen */
 #socials{
     display: flex;
     padding: 10px;
    flex-direction: column;
    margin-left: 50px;
 }
+/* Decorates social section (spotify and instagram) */
 #socials a{
     text-decoration: none;
     color: rgb(0, 0, 0);
