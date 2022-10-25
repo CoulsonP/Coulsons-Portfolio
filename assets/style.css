@@ -144,7 +144,7 @@ section h2{
         width: auto;
     }
 
-    /* Stacks content when screen is thinner */
+    /* Stacks content when screen is not as wide */
     .aboutme, 
     footer {
         flex-direction: column;
