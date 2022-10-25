@@ -7,41 +7,28 @@
 }
 /* Header Background changes */
 header {
-background-color: rgb(42, 148, 148);
+background-color: rgba(88, 160, 160, 0.551);
 display: flex;
 justify-content: space-between;
 flex-wrap: wrap;
 }
 /* Main Banner */
-#banner{
+.banner{
     background-image: url("https://images.ctfassets.net/hrltx12pl8hq/4f6DfV5DbqaQUSw0uo0mWi/6fbcf889bdef65c5b92ffee86b13fc44/shutterstock_376532611.jpg?fit=fill&w=800&h=300");
     width: 100%;
     height: 400px;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
+    justify-content: right;
+    position: relative;
+}
+.banner h2{
+    position:absolute;
+    bottom:5px;
+    right:5px;
 }
 /* First Project */
-#horiseon{
-    background-image: url("https://user-images.githubusercontent.com/114447565/196268494-0f583eff-ec36-4572-b739-a431882f19f7.png");
-    width: 35%;
-    height: 250px;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-#project2{
-    background-image: url("https://images.ctfassets.net/hrltx12pl8hq/4f6DfV5DbqaQUSw0uo0mWi/6fbcf889bdef65c5b92ffee86b13fc44/shutterstock_376532611.jpg?fit=fill&w=800&h=300");
-    width: 80%;
-    height: 250px;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-#placeholder{
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG6OjTFhqfkFchOEWDF5fKSZ5-ukpAWWnkWg&usqp=CAU");
-    width: 50%;
-    height: 300px;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
 nav ul{
     display: flex;
@@ -59,7 +46,148 @@ li{
     width: 100%;
     flex-direction: row;
 }
-h2{
-    border-right: 5px solid black;
-    padding: 25px;
+section h2{
+    border-right: 2px solid black;
+    padding: 10px;
+    margin: 10px;
+
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex div{
+    width: 30%;
+    position: relative;
+}
+.flex img{
+    width: 100%;
+}
+#socials{
+    display: flex;
+    padding: 10px;
+   flex-direction: column;
+   margin-left: 50px;
+}
+#socials a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 125%;
+    text-decoration: underline 4px;
+    text-underline-offset: 6px;
+    padding: 10px;
+}
+/* format for tablet screen */
+@media screen and (max-width: 980px){
+    section h1, 
+    footer h1{
+        font-size: 40px;
+    }
+}    
+/* format for phones */
+@media screen and (max-width: 768px){
+
+    header {
+        justify-content: center;
+    }
+
+    header h1 {
+        margin: 0;
+        padding: 5px;
+        text-align: center;
+    }
+
+    header nav {
+        margin: 1%;
+        justify-content: space-evenly;
+    }
+
+    .intro{
+        height: 150px;
+        justify-content: center;
+    }
+
+    .intro h2 {
+        margin: 0;
+    }
+
+    section h2,
+     footer h2{
+        font-size: 32px;
+    } 
+}
+/* format for small phones */
+@media screen and (max-width:575px){
+    .primary-project{
+        height: 150px;
+    }
+
+    section h1, 
+    footer h1{
+        font-size: 32px;
+        width: 100%;
+        text-align: left;
+        border-right: none;
+        border-bottom: 3px solid;
+        padding: inherit;
+    }
+
+    header nav ul li {
+        font-size: 16px;
+        padding: 5px 8px;
+    }
+
+
+    .content article, 
+    footer {
+        margin: 20px;
+        width: auto;
+    }
+
+    /* Stacks content when screen is thinner */
+    .aboutme, 
+    footer {
+        flex-direction: column;
+    }
+
+    .project-container, 
+    footer nav{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .margin-left{
+        margin-left: 0;
+    }
+
+    .margin-right{
+        margin-right: 0;
+    }
+
+    .projects, 
+    .aboutme p {
+        width: auto;
+        margin-top: 20px;
+        padding: inherit;
+    }
+
+    footer{
+        margin: 0;
+        width: auto;
+        padding: 0;
+
+    }
+    /* Changes format of footer links */
+    footer ul {
+        flex-direction: column;
+        align-items: baseline;
+        align-content: baseline;
+    }
+
+    footer ul li {
+        margin: 0;
+        width: fit-content;
+    }
+    
+
 }
